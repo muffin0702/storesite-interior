@@ -1,0 +1,296 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.pagination li {
+  padding: 0 20px;
+}
+
+.page-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* navigation */
+  /* Lines */
+}
+#header .site-title a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+#header #hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+#header #hamburger-nav.active {
+  opacity: 1;
+  left: 0;
+}
+#header .sections a {
+  color: #fff;
+}
+#header .sections li {
+  margin-bottom: 14px;
+}
+#header .hamburger-menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#header .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+#header .hamburger-menu.active .line {
+  background-color: #fff;
+}
+#header .line:nth-child(1) {
+  top: 10px;
+}
+#header .line:nth-child(2) {
+  bottom: 10px;
+}
+#header .hamburger-menu.active .line:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+#header .hamburger-menu.active .line:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+#header #mask {
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#header #mask.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#product {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+#product .product-ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+#product .product-img {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+#product .product-title, #product .price {
+  font-size: 0.75rem;
+}
+#product .link-text {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.content #item {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+.content .item-text {
+  width: 42%;
+}
+.content .item-text p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.content .item-dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.content .item-dl dt {
+  width: 30%;
+}
+.content .item-dl dd {
+  width: 70%;
+}
+.content .item-img {
+  width: 50%;
+}
+.content .link-text {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#about {
+  max-width: 600px;
+}
+#about p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+#company {
+  max-width: 600px;
+}
+#company .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#company dt {
+  width: 30%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+#company dt:last-of-type {
+  border-bottom: none;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+#footer .footer-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#footer .footer-li {
+  font-size: 0.75rem;
+  margin-right: 30px;
+}
+#footer .copyright {
+  font-size: 0.625rem;
+}/*# sourceMappingURL=style.css.map */
